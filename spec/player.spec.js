@@ -2,13 +2,24 @@ import Player from 'player';
 
 describe('Player', function() {
   describe('initialize', function() {
-    it('should create two new players', function() {
+    it('should create two new palyers', function() {
+      var players = new Player();
+      expect(players.player1).toBeDefined();
+    });
+    it('should create two new palyers', function() {
+      var players = new Player();
+      expect(players.player2).toBeDefined();
 
     });
   });
   describe('play', function() {
     it('should mark spot with X or O', function() {
-
+      var players = new Player();
+      players.play(5);
+      players.play(1);
+      players.play(4);
+      players.game.board[6] = 'X';
+  expect(players.game.board[6]).toEqual('X');
     });
   });
   // describe('clearBoard', function() {
