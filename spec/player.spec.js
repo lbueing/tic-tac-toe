@@ -2,7 +2,7 @@ import Player from 'player';
 
 describe('Player', function() {
   describe('initialize', function() {
-    it('should create two new palyers', function() {
+    it('should create two new players', function() {
 
     });
   });
