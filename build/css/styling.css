@@ -3,6 +3,10 @@
   color: #2978A0;
 }
 
+.whose-turn {
+  text-align: center;
+}
+
 body {
   background-color: #E6E6E9;
 }
@@ -13,6 +17,9 @@ body {
   height: 10vw;
   border: 1pt black solid;
   border-radius: 8%;
+  margin-bottom: 0;
+  font-size: 5em;
+  text-align: center;
 }
 
 #board {
@@ -20,7 +27,7 @@ body {
   display: inline;
 }
 
-.sidebar {
+#sidebar {
   width: 25vw;
   float: right;
   /*padding-left: 15vw;*/

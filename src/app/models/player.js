@@ -12,7 +12,7 @@ const Player = Backbone.Model.extend({
 
   play: function(selection) {
   if (this.game.validMove(selection, this.get("currentPlayer")) === false) {
-    return;
+    return false;
   }
 
   // render?

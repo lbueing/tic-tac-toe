@@ -19,7 +19,6 @@ describe('Board', function() {
       players.play(4);
       players.play(2);
       players.game.get("board")[6] = 'X';
-      console.log(players.game.get("board"));
   expect(players.game.checkWin()).toEqual(true);
     });
     it('should not return true if  player has not won yet', function() {
